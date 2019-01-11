@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="js/ShortcutPlugin.js"></script>
+
+<script type="text/javascript" src="lib/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="icons/icon_base64.js"></script>
+<script type="text/javascript" src="lib/favicon/favicon.js"></script>
+
+<script type="text/javascript" src="utils.js"></script>
+<script type="text/javascript" src="config_cts.js"></script>
+<script type="text/javascript" src="intent.js"></script>
+<script type="text/javascript">
+var _config_sts_path = "config_sts.js";
+</script>
+<script type="text/javascript" src="script.js"></script>
+
+<!--
+<script type="text/javascript" src="http://pc.pulipuli.info/phonegap-build-projects/PhoneGapBuild-ShareToShortcut/test/scripts/utils.js"></script>
+<script type="text/javascript" src="http://pc.pulipuli.info/phonegap-build-projects/PhoneGapBuild-ShareToShortcut/test/scripts/config_cts.js"></script>
+<script type="text/javascript" src="http://pc.pulipuli.info/phonegap-build-projects/PhoneGapBuild-ShareToShortcut/test/scripts/intent.js"></script>
+-->
+<script type="text/javascript">
+//var _config_sts_path = "http://pc.pulipuli.info/phonegap-build-projects/PhoneGapBuild-ShareToShortcut/test/scripts/config_sts.js";
+</script>
+
+<script type="text/javascript">
+document.addEventListener("deviceready", function () {
+    $.getScript(_config_sts_path, function () {
+        ready();
+    });
+});
+</script>
+
+</head>
+</html>
